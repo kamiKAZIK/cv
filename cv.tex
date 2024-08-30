@@ -1,0 +1,235 @@
+%-------------------------
+% Resume in Latex
+% Author : Eduardas Kazakas
+% License : MIT
+%------------------------
+
+\documentclass[11pt, letterpaper]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames, dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage[sfdefault]{roboto}
+\input{glyphtounicode}
+
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.2in}
+\addtolength{\evensidemargin}{-0.2in}
+\addtolength{\textwidth}{0.5in}
+\addtolength{\topmargin}{-0.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+\begin{document}
+
+\begin{center}
+    \textbf{\Huge \scshape Eduardas Kazakas} \\ \vspace{3pt}
+    \small +370 615 55301 $|$ \href{mailto:eduardas.kazakas@gmail.com}{\underline{eduardas.kazakas@gmail.com}} $|$ 
+    \href{https://linkedin.com/in/eduardas-kazakas}{\underline{linkedin.com/in/eduardas-kazakas}} $|$
+    \href{https://github.com/kamiKAZIK}{\underline{github.com/kamiKAZIK}}
+\end{center}
+
+
+%
+%-----------EDUCATION-----------
+%
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Vilnius University}{Vilnius, Lithuania}
+      {Bachelor of Computer Science}{2004 -- 2008}
+  \resumeSubHeadingListEnd
+
+%
+%-----------EXPERIENCE-----------
+%
+\section{Experience}
+  
+  \resumeSubHeadingListStart
+  
+    \resumeSubheading
+      {Senior Scala Engineer}{July 2018 -- Present}
+      {Nielsen - Contract}{Remote, Vilnius, Lithuania}
+      \resumeItemListStart
+        \resumeItem{Designed and developed data matching and aggregation tools using Scala, Apache Spark and Akka for Nielsen Audience Planner}
+        \resumeItem{Designed and implemented micro-service architecture for Nielsen One product using Akka, Apache Spark, PostgreSQL and RabbitMQ}
+        \resumeItem{Worked in close collaboration with solution architects and product owners to deliver the microservices based on DDD, CQRS and Event Sourcing principles for Nielsen One product}
+        \resumeItem{Implemented CI pipelines and containerization solutions for micro-services across Nielsen products using Docker, Gitlab CI, Helm and Kubernetes}
+        \resumeItem{Automated AWS cloud service management with Terraform}
+        \resumeItem{Participated in routine DevOps sessions to find ways to assess and minimize AWS cloud costs}
+        \resumeItem{Participated in routine feature planning and providing insight on cost of changes}
+        \resumeItem{Adhered to TDD principles when developing new features and addressing issues and keep test code coverage levels high for critical software parts}
+        \resumeItem{Helped on-boarding new engineers and mentor them throughout their career path}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Senior Java Engineer}{January 2018 -- November 2020}
+      {Alpinia Enterprises Ltd.}{On-site, Gibraltar, Gibraltar}
+      \resumeItemListStart
+        \resumeItem{Developed new markets for NextBet sports betting product}
+        \resumeItem{Implemented micro-service architecture for betting data providers in order to expand NextBet product betting options using Spring Framework, Oracle DB, RabbitMQ}
+        \resumeItem{Implement dedicated testing tools for sports events using Spring Framework, Angular and RabbitMQ}
+        \resumeItem{Mentored and guided team members in optimizing code quality and performance}
+        \resumeItem{Been a part of rapid response team for critical issues and outages}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {Senior Java/Scala engineer}{December 2016 -- December 2018}
+      {Exadel LT}{Remote, Vilnius, Lithuania}
+      \resumeItemListStart
+        \resumeItem{Responsible for design, development and support of Nielsen Media Impact and Nielsen Audience Planner products}
+        \resumeItem{Developed data loading and processing services using Apache Spark, Scala, Amazon S3 and HDFS}
+        \resumeItem{Optimize performance and scalability of the project. Develop RESTful services to to expose backend data aggregation}
+        \resumeItem{Provideed service infrastructure configuration using Docker, Kubernetes and Concourse CI}
+        \resumeItem{In addition to that, I have also expanded my knowledge in frontend department as I re-designed and re-implemented frontend application from scratch using React, Redux, Webpack, Bootstrap}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Lead Java/Scala Developer/Architect}{February 2016 -- December 2016}
+      {Affinity9}{On-site, Vilnius, Lithuania}
+      \resumeItemListStart
+        \resumeItem{Developed architecture and middleware for Artificial Inteligence and Machine
+Learning Engine}
+        \resumeItem{Provided guidelines for juniors, perform regular code reviews}
+        \resumeItem{Delivered working prototype using Scala, Apache Spark, H2O.ai, Cassandra, Kafka and RESTful micro-services, based on Spring Framework}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Senior Java Engineer}{April 2015 -- February 2016}
+      {Exadel LT}{On-site, Vilnius, Lithuania}
+      \resumeItemListStart
+        \resumeItem{Responsible for development of frontend solutions for Deloitte financial platform}
+        \resumeItem{Responsible for design and development of UI component library. Library was based on AngularJS, Bootstrap, NodeJS, KendoUI}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {System Engineer}{August 2013 -- April 2015}
+      {Wirecard AG}{On-site, Munich, Germany}
+      \resumeItemListStart
+        \resumeItem{Developed solutions for payment processing and card issuing services using Java, Spring Framework, Hibernate, REST, SOAP, ActiveMQ}
+        \resumeItem{Responsible for creating and maintaining universal messaging framework to send emails, SMS messages, push notifications, depending on specific events in customer card management system}
+        \resumeItem{Since we provided services for Wirecard Bank, code quality was very strictly regulated. I took significant part in setting up code quality monitoring using Sonar as well as creating unit test and integration test cases (JUnit, TestNG, SoapUI)}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {JAVA System Developer}{December 2011 -- July 2013}
+      {CDRator A/S}{On-site, Copenhagen, Denmark}
+      \resumeItemListStart
+        \resumeItem{Developed solutions for service providers, MNOs, MVNEs and MVNOs who
+require market-leading billing and customer care. The solutions were used to manage and support high volume subscriber bases, typically in the Telecom, Internet, and Media industries but its advantages can easily be utilized by any industry with similar needs or challenges}
+        \resumeItem{Responsible for design and impelentation of integration components with 3rd parties, such as postage and shipping providers, risk and fraud detection providers, payment providers. Integration solutions were implemented using Java, Oracle SQL, REST, SOAP. Each code solution was covered by unit tests}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Full-stack engineer}{July 2010 -- December 2011}
+      {MYSecurityCenter}{On-site, Marbella, Spain}
+      \resumeItemListStart
+        \resumeItem{Developed and maintained E-Shop for anti-virus products using PHP, MongoDB, RabbitMQ, Java, XHTML and JavaScript}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Oracle PL/SQL developer}{January 2008 -- May 2010}
+      {Etnomedijos Intercentras, UAB}{On-site, Vilnius, Lithuania}
+      \resumeItemListStart
+        \resumeItem{Developed and supported software for the National scope project using Oracle products}
+        \resumeItem{Implemented key functionality to increase performance and availability of the system}
+        \resumeItem{Implemented integration endpoints for internal and 3rd party services}
+        \resumeItem{Participated in implementation of Electronic System of Services for health specialists and Administration of register of pension accumulation participators and pension
+accumulation contracts and accumulative pension contributions}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {WEB developer}{May 2006 -- December 2007}
+      {Unique Solutions, UAB}{On-site, Vilnius, Lithuania}
+      \resumeItemListStart
+        \resumeItem{Developed and supported commercial CMS system}
+        \resumeItem{Implemented additional functionality for company’s CRM system}
+        \resumeItem{Developed various small web sites and large business systems using PHP, MariaDB, XHTML and JavaScript}
+      \resumeItemListEnd
+      
+  \resumeSubHeadingListEnd
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+%
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Scala, Java, GoLang, Python, Rust, SQL, Oracle PL/SQL, JavaScript, TypeScript} \\
+     \textbf{Frameworks / Software}{: Akka, Apache Spark, Angular, React, Node.js, RabbitMQ, ActiveMQ, MongoDB, Cassandra, PostgreSQL, OracleDB, Kafka} \\
+     \textbf{Developer Tools / Infrastructure}{: Git, Docker, Helm, Kubernetes, Terraform, GitlabCI, AWS Cloud, Google Cloud Platform, IntelliJ} \\
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
